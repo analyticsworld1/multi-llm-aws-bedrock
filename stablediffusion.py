@@ -5,7 +5,7 @@ import os
 
 prompt_data = """
 provide me an 4k hd image of a beach, also use a blue sky rainy season and
-cinematic display
+cinematic display.
 """
 prompt_template=[{"text":prompt_data,"weight":1}]
 bedrock = boto3.client(service_name="bedrock-runtime")
