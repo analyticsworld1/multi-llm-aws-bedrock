@@ -15,7 +15,7 @@ import numpy as np
 from langchain.text_splitter import RecursiveCharacterTextSplitter
 from langchain_community.document_loaders import PyPDFDirectoryLoader
 
-# Vector Embedding And Vector Store
+# Vector Embedding And Vector Store..
 
 from langchain.vectorstores import FAISS
 
@@ -26,7 +26,6 @@ from langchain.chains import RetrievalQA
 ## Bedrock Clients
 bedrock=boto3.client(service_name="bedrock-runtime")
 bedrock_embeddings=BedrockEmbeddings(model_id="amazon.titan-embed-text-v1",client=bedrock)
-
 
 ## Data ingestion
 def data_ingestion():
