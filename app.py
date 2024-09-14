@@ -4,7 +4,7 @@ import sys
 import boto3
 import streamlit as st
 
-## We will be suing Titan Embeddings Model To generate Embedding
+## We will be using Titan Embeddings Model To generate Embedding
 
 from langchain_community.embeddings import BedrockEmbeddings
 from langchain.llms.bedrock import Bedrock
@@ -23,7 +23,7 @@ from langchain.vectorstores import FAISS
 from langchain.prompts import PromptTemplate
 from langchain.chains import RetrievalQA
 
-## Bedrock Clients
+## AWS Bedrock Clients
 bedrock=boto3.client(service_name="bedrock-runtime")
 bedrock_embeddings=BedrockEmbeddings(model_id="amazon.titan-embed-text-v1",client=bedrock)
 
